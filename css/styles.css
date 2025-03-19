@@ -7,12 +7,42 @@ body {
   ul,
   ol {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
-  
+  h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+  }
   a {
     text-decoration: none;
   }
-  
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  .header {
+    border-bottom: 1px solid #e7e9fc;
+  }
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+  .header-menu-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  .address-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
   .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -22,6 +52,10 @@ body {
     text-transform: uppercase;
     color:  #4d5ae5;
   }
+  .header-logo {
+    padding: 24px 0;
+    margin-right: 76px;
+  }
 .header-logo .header-web{
     color: #2e2f42;
 } 
@@ -29,16 +63,22 @@ body {
     color: #f4f4fd;
 }
 .header-menu-title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
+    display: block;
+    padding: 24px 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
 }
 .address {
     font-style: normal;
+    margin-left: auto;
 }
+
 .address-title {
+    display: block;
+    padding: 24px 0;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -52,6 +92,7 @@ body {
 }
 .main {
     background-color: #2e2f42;
+    text-align: center;  
 }
 .main-title {
     font-weight: 700;
@@ -61,6 +102,7 @@ body {
     text-align: center;
     color: #ffffff;
 }
+
 .main-button {
     background-color: #4d5ae5;
     font-weight: 500;
@@ -74,6 +116,21 @@ body {
 .main-button:hover,
 .main-button:focus {
     background-color: #404bbf;
+}
+
+.advantages-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    width: 1128px;
+    height: 104px;
+}
+.advantages-list {
+    width: 1128px;
+    height: 104px;
+}
+.advantages-item {
+    width: calc((100% - 72px) / 4);
 }
 .advantages-title {
     font-weight: 500;
@@ -92,33 +149,39 @@ body {
 .team {
     background-color: #f4f4fd;
 }
+.team-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 232px 120px;
+}
 .team-title {
     text-transform: capitalize;
     font-weight: 700;
-font-size: 36px;
-line-height: 111%;
-letter-spacing: 0.02em;
-text-align: center;
-color: #2e2f42;
+    font-size: 36px;
+    line-height: 111%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
 }
 .team-item {
     background-color: #fff;
 }
 .team-name {
     font-weight: 500;
-font-size: 20px;
-line-height: 120%;
-letter-spacing: 0.02em;
-text-align: center;
-color: #2e2f42;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
 }
 .team-text {
     font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-letter-spacing: 0.02em;
-text-align: center;
-color: #434455;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #434455;
 }
 .port-title {
     text-transform: capitalize;
@@ -126,22 +189,22 @@ color: #434455;
     font-size: 36px;
     line-height: 111%;
     letter-spacing: 0.02em;
-text-align: center;
-color: #2e2f42;
+    text-align: center;
+    color: #2e2f42;
 }
 .port-name {
     font-weight: 500;
-font-size: 20px;
-line-height: 120%;
-letter-spacing: 0.02em;
-color: #2e2f42
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: #2e2f42
 }
 .port-text {
     font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-letter-spacing: 0.02em;
-color: #434455;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #434455;
 }
 .footer {
     background-color: #2e2f42;
@@ -160,8 +223,8 @@ color: #434455;
 }
 .footer-text {
     font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-letter-spacing: 0.02em;
-color: #f4f4fd;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
 }
