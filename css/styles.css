@@ -4,8 +4,7 @@ body {
     background-color: #fff;
   }
   
-  ul,
-  ol {
+  ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -15,6 +14,12 @@ body {
   }
   a {
     text-decoration: none;
+  }
+  li {
+    list-style: none;
+  }
+  img {
+    display: block;
   }
   .container {
     max-width: 1158px;
@@ -92,9 +97,13 @@ body {
 }
 .main {
     background-color: #2e2f42;
+    padding: 188px 0;
     text-align: center;  
 }
 .main-title {
+    width: 496px;
+    height: 120px;
+    margin: 0 auto; 
     font-weight: 700;
     font-size: 56px;
     line-height: 107%;
@@ -104,6 +113,11 @@ body {
 }
 
 .main-button {
+    width: 169px;
+    height: 56px;
+    border-radius: 4px;
+    margin-top: 48px;
+    border: none;
     background-color: #4d5ae5;
     font-weight: 500;
     font-size: 16px;
@@ -118,21 +132,33 @@ body {
     background-color: #404bbf;
 }
 
+.advantages {
+    padding: 120px 0;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 .advantages-list {
     display: flex;
-    align-items: center;
     gap: 24px;
-    width: 1128px;
-    height: 104px;
+    padding-left: 0;
 }
-.advantages-list {
-    width: 1128px;
-    height: 104px;
-}
+
 .advantages-item {
     width: calc((100% - 72px) / 4);
 }
 .advantages-title {
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 120%;
@@ -140,7 +166,6 @@ body {
     color: #2e2f42;
 }
 .advantages-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.02em;
@@ -148,12 +173,14 @@ body {
 }
 .team {
     background-color: #f4f4fd;
+    padding: 120px 0;
 }
 .team-list {
     display: flex;
-    align-items: center;
+    width: 264px;
+    height: 380px;
     gap: 24px;
-    padding: 232px 120px;
+    margin-top: 72px;
 }
 .team-title {
     text-transform: capitalize;
@@ -168,6 +195,7 @@ body {
     background-color: #fff;
 }
 .team-name {
+    margin-top: 32px;
     font-weight: 500;
     font-size: 20px;
     line-height: 120%;
@@ -176,6 +204,7 @@ body {
     color: #2e2f42;
 }
 .team-text {
+    margin-top: 8px;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -183,7 +212,22 @@ body {
     text-align: center;
     color: #434455;
 }
+.port {
+    padding: 120px 0;
+}
+.port-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+    padding: 0;
+
+}
+.port-item {
+   width: calc((100% - 48px) / 3);
+}
 .port-title {
+    margin-bottom: 72px;
     text-transform: capitalize;
     font-weight: 700;
     font-size: 36px;
@@ -192,7 +236,13 @@ body {
     text-align: center;
     color: #2e2f42;
 }
+.port-card {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none; 
+}
 .port-name {
+    margin-top: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 120%;
@@ -200,6 +250,7 @@ body {
     color: #2e2f42
 }
 .port-text {
+    margin-top: 8px;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -208,8 +259,10 @@ body {
 }
 .footer {
     background-color: #2e2f42;
+    padding: 100px 0;
 }
 .footer-logo {
+    display: block;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -222,6 +275,9 @@ body {
     color: #f4f4fd;
 }
 .footer-text {
+    display: block;
+    max-width: 264px;
+    margin-top: 16px;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
