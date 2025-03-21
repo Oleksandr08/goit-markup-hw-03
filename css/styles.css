@@ -180,10 +180,12 @@ body {
 }
 .team-list {
     display: flex;
-    width: 264px;
-    height: 380px;
     gap: 24px;
+    list-style: none;
     
+}
+.img-info {
+    padding: 32px 0
 }
 .team-title {
     text-transform: capitalize;
@@ -247,9 +249,7 @@ body {
     border: 1px solid #e7e9fc;
     border-top: none; 
 }
-.img-info {
-    padding: 32px 0
-}
+
 .port-name {
     margin-bottom: 8px;
     font-weight: 500;
