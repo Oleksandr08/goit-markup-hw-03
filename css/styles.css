@@ -197,6 +197,8 @@ body {
 }
 .team-item {
     background-color: #fff;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
 .team-name {
     margin-top: 32px;
