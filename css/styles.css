@@ -183,7 +183,7 @@ body {
     width: 264px;
     height: 380px;
     gap: 24px;
-    margin-top: 72px;
+    
 }
 .team-title {
     text-transform: capitalize;
@@ -193,6 +193,7 @@ body {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 72px;
 }
 .team-item {
     background-color: #fff;
