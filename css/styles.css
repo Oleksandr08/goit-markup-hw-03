@@ -95,13 +95,14 @@ body {
 .address-title:focus {
     color: #404bbf;
 }
+/* section1 */
 .main {
     background-color: #2e2f42;
     padding: 188px 0;
     text-align: center;  
 }
 .main-title {
-    width: 496px;
+    max-width: 496px;
     height: 120px;
     margin: 0 auto; 
     font-weight: 700;
@@ -113,9 +114,10 @@ body {
 }
 
 .main-button {
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     border-radius: 4px;
+    display: block;
     margin-top: 48px;
     border: none;
     background-color: #4d5ae5;
@@ -131,7 +133,7 @@ body {
 .main-button:focus {
     background-color: #404bbf;
 }
-
+/* section2 */
 .advantages {
     padding: 120px 0;
 }
@@ -172,6 +174,7 @@ body {
     letter-spacing: 0.02em;
     color: #434455;
 }
+/* section3 */
 .team {
     background-color: #f4f4fd;
     padding: 120px 0;
@@ -213,6 +216,7 @@ body {
     text-align: center;
     color: #434455;
 }
+/* section4 */
 .port {
     padding: 120px 0;
 }
@@ -237,7 +241,7 @@ body {
     text-align: center;
     color: #2e2f42;
 }
-.port-card {
+.img-name {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none; 
@@ -257,6 +261,7 @@ body {
     letter-spacing: 0.02em;
     color: #434455;
 }
+/* footer */
 .footer {
     background-color: #2e2f42;
     padding: 100px 0;
